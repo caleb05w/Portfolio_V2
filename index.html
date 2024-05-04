@@ -9,17 +9,23 @@
         <script src="https://kit.fontawesome.com/3d577348db.js" crossorigin="anonymous"></script>
     </head>
 
+    <!-- Richmond Gateway Theatre -->
     <body id="index">
         <div class="page-half"></div>
             <div id="circularcursor"></div>
             <div class="page-container">
                 <div class = "container-index">
                 <h1>CALEB WU</h1>
-                    <ul class="align-left container-nav">
-                        <li><a href="about.html"><h5>ABOUT</h5></a></li>
-                        <li><h5>CONTACT</h5></li>
-                        <li><a href="assets/Resume.pdf"download="Resume.pdf" target="_blank"><h5>RESUME</h5></a></li>
-                        <li><a href="Gallery.html"><h5>GALLERY</h5></a></li>
+
+                <div SFU onclick="mobiletoggle()" class="align-left mobile-index-button" id="mobiletogglebutton-case">
+                    <div id="mobiletogglebutton" class="rotate-90"> <i class="fa fa-angle-down"></i> </div>
+                </div>
+
+                    <ul class="align-left container-nav" id="mobile-menu">
+                        <li><a href="about.html"><h5 id="link">ABOUT</h5></a></li>
+                        <li><a href="Gallery.html"><h5 id="link">GALLERY</h5></a></li>
+                        <li><a href="assets/Resume.pdf"download="Resume.pdf" target="_blank"><h5 id="link">RESUME</h5></a></li>
+                        <li><a href="#contact"><h5 id="link">CONTACT</h5></a></li>
                     </ul>
                 </div>
                 <div class="container-index-filler"></div>
@@ -40,7 +46,6 @@
                         <div class="gallery-row">
                             <div class="container-gallery withHover">
                             <a href="fuorisalone.html"><img src="assets/images/project2.png"></a>
-
                                     <div class="text-bottom-image-text">
                                         <h4 id="white">Fuorisalone Microsite </h4>
                                         <div class="container-grid-template-2 container-line-height withHover" id="grey">
@@ -52,25 +57,38 @@
                             </div>
                         </div>
                     </div>
+
+                        <div class="container-100" id="desktop-hidden">
+                            <h4> Fuorisalone Microsite </h4>
+                            <h5 id="grey">Experimental microsite of the streets of Milan.</h5>
+                            <div class="divider-5"></div>
+                        </div>
         
                     <div class="thumbnail-row-container">
                         <div class="container-gallery withHover">
                             <a href="praey.html"><img src="assets/images/Praey/Praey_cover.png"></a>
 
-                        <div class="text-bottom-image-text">
-                            <h3>Project 101 </h3>
-                            <div class="container-grid-template-2 container-line-height withHover" id="grey">
-                                <h6 id="thin">Brief description</h5>
-                                <h6 id="thin" class="align-right">Labels|Startup|UI/UX</h6>
+                            <div class="text-bottom-image-text">
+                                <h4 id="white">Praey 2D Game</h4>
+                                <div class="container-grid-template-2 container-line-height withHover" id="grey">
+                                    <h5 id="grey">2D dungeon crawler solely designed and developed</h5>
+                                    <h5 id="grey" class="align-right">Pixel Art | Game Development</h5>
+                                </div>
                             </div>
-                        </div>
                         
                         </div>
                     </div>
+
+                    <div class="container-100" id="desktop-hidden">
+                        <h4> Praey 2D Game </h4>
+                        <h5 id="grey">2D dungeon crawler solely designed and developed</h5>
+                        <div class="divider-5"></div>
+                    </div>
+
                 </div>
 
 
-            <div class="footer">
+            <div class="footer" id="contact">
                 <div class="container-grid-template-3">
 
                     <div class="container">

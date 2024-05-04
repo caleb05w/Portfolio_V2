@@ -43,6 +43,7 @@ function myFunction() {
 
 
 let enlarged=0;
+let active = 0;
 
 
 document.getElementById("Home_button").addEventListener("mouseover", Home_text);
@@ -82,13 +83,16 @@ function toggleEnlargeImg(img) {
        img.classList.remove("withHover");
 
        document.getElementById("page-opacity").style.cssText =`
-       height: 100vh;
+       height: 200vh;
        width: 100%;
        opacity: 80%;
        background-color: black;
        position: fixed;
        z-index: 4;
        margin: 0;
+       top: -5vh;
+       transform: translate(0, 0vh);
+       transition: ease-in-out 0.5s;
        `;
        
      }
@@ -105,10 +109,12 @@ function toggleEnlargeImg(img) {
        enlarged = 0;
 
        document.getElementById("page-opacity").style.cssText =`
-       z-index: 4;
+       z-index: 3;
        position: fixed;
-       height: 0%;
-       width: 0%;
+       height: 100%;
+       width: 100%;
+       transform: translate(0, -100vh);
+       transition: ease-in-out 0.5s;
        `;
      }
      return enlarged;
@@ -126,3 +132,41 @@ window.transitionToPage = function(href) {
 document.addEventListener('DOMContentLoaded', function(event) {
   document.querySelector('body').style.margin = 0;
 })
+
+//menu mobile
+
+function mobiletoggle() {
+  if (active===0){
+    document.getElementById("mobile-menu").style.cssText =`
+    top: -2vh;
+    `
+    document.getElementById("mobiletogglebutton").style.cssText =`
+    transform: rotate(180deg);
+    transition: ease-in-out 0.31s;
+    `
+
+    document.getElementById("mobiletogglebutton-case").style.cssText =`
+    transform: translate(0, +15vh);
+    transition: ease-in-out 0.3s;
+    `
+    
+    active = 1;
+  }
+  else{
+    document.getElementById("mobile-menu").style.cssText =`
+    top: -25vh; 
+    transition: ease-in-out 0.3s;
+    `
+    document.getElementById("mobiletogglebutton").style.cssText =`
+    transform: rotate(0deg);
+    transition: ease-in-out 0.31s;
+    `
+    document.getElementById("mobiletogglebutton-case").style.cssText =`
+    transform: translate(0, 0vh);
+    transition: ease-in-out 0.3s;
+    `
+
+    active = 0;
+  }
+  return active;
+}

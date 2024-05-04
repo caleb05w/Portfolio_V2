@@ -1,0 +1,624 @@
+/* fonts */
+@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+                
+#about {
+  background-color: black;
+  color:white;
+}
+
+/* also a child class */
+#about .container-grid-template-2-head{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-height: fit-content;
+  max-width: fit-content;
+}
+
+#thin {
+  font-weight: 50;
+}
+
+#italicized {
+  font-style: italic;
+}
+
+h1#commander{
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif; 
+  font-weight: 350;
+  font-size: 2.3rem;
+  display:block;
+}
+
+#white {
+  color:white;
+}
+
+#grey {
+  color:#858585;
+}
+
+#italicized-thin {
+  font-style: italic;
+  font-weight: 100;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;  
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif; 
+  font-weight: 500;                                         
+}
+
+*.container-project-body {
+  margin: 20px 0 20px 0;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+#about a{
+  color:white;
+}
+
+img {
+margin: 0px;
+padding: 0px;
+object-fit: contain;
+width: 100%;
+height: 100%;
+transition: opacity 1s;
+transition: ease-in-out 0.3s;
+display: block;
+
+}
+
+/* #gallery img {
+  object-fit: contain;
+} */
+
+#gallery .thumbnail-row-container:hover{
+cursor:pointer;
+}
+
+body {
+  background-color: white;
+  animation: fadeInAnimation ease-in-out 1s;
+}
+
+#circularcursor {
+  background-color: transparent;
+  border:1px solid black;    
+  height:20px;
+  width:20px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  position: absolute;
+  z-index: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 { 
+  font-family: 'Geologica', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 0px;
+}
+
+/* body copy */
+h2 {
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif; 
+  font-weight: 410;
+  letter-spacing: 0px;
+  font-size: 1.4rem;
+  display:block;
+}
+
+h3 {
+  font-family: 'Geologica', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0px;
+  font-size: 1.1rem;
+  letter-spacing: -0.5px;
+}
+
+
+h4 {
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif; 
+  font-weight: 400;
+  letter-spacing: 0px;
+  font-size: 1rem;
+  letter-spacing: -0.5px;
+}
+
+#index h4 {
+  font-family: 'Geologica', sans-serif;
+  font-weight: 350;
+  letter-spacing: 0px;
+  font-size: 0.8rem;
+  letter-spacing: -0.5px;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 0.7rem;
+  color: black;
+  line-height: 18px;
+}
+
+#about h5 {
+  color:white;
+  font-weight: 400;
+  font-size: 0.7rem;
+  line-height: normal;
+}
+
+h6 {
+  font-weight: 300;
+  font-size: 0.7rem;
+  color: #858585;
+  line-height: 15px;
+}
+
+
+/* containers */
+
+.page-container {
+  margin: 2%;
+}
+
+.container-flex {
+  display: flex;
+}
+
+.container-text {
+  height: 100%;
+}
+
+#about .container-text {
+  height: 70%;
+  width: 65%;
+  position: relative;
+  margin: 0 0 50% 0;
+}
+
+.container-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5%;
+  /*aligned my items to the right!*/
+  justify-items: right;
+}
+
+.container-left-text { 
+  width: 40%;
+  text-align: left;
+}
+
+.container-left-text-filler { 
+  width: 100%;
+  text-align: left;
+  
+}
+
+.container-right-text { 
+  width: 40%;
+  text-align: right;
+}
+
+.container-index {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: fixed;
+  width: 96%;
+  background: white;
+  z-index: 1;
+  margin: -2% 0 0 0px;
+  padding-top: 2%;
+  height: 5%;
+}
+
+.container-image-project {
+  width: 80%;
+  text-align:center;
+  z-index: 0;
+}
+
+.container-project-body-casing {
+  width: 95%;
+  height: 100%;
+}
+
+.container-project-body {
+  width: 60%;
+  height: 100%;
+}
+
+.container-index-filler {
+  padding-top: 38px;
+}
+
+.container-project-image {
+  width: 100%;
+  height: 80vh;
+}
+
+.container-project-image img {
+  object-fit: cover;
+}
+
+.container-grid-template-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  width: 100%;
+}
+
+
+.container-grid-template-2-project_1 {
+  display: grid;
+  grid-template-columns:  1fr 1.53fr;
+  gap: 8px;
+  width: 100%;
+}
+
+.container-project-body-videos {
+  height: 90%;
+  width: 80%;
+}
+
+.container-project-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: right;
+  width: 70%;
+}
+
+.container-grid-template-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5%;
+  position: relative;
+}
+
+.container-grid-template-3-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  height: 100%;
+  width: 100%;
+}
+
+.container-flex-gallery{
+display: flex;
+height: 100%;
+width: 100%;
+gap: 8px;
+}
+
+.container-col {
+    width: 100%;
+    height: auto;
+    margin: 4px;
+}
+
+.container-col .thumbnail-row-container {
+  margin-top: 8px;
+}
+
+.container-center-text {
+  text-align: center;
+}
+
+.container-grid-template-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100%;
+  width: 100%;
+}
+
+.container-about-image {
+  width:100%;
+  height: 70%;
+  position:relative;
+}
+
+.container-about-image img {
+  object-fit: cover;
+}
+
+.container-about-image-absolute {
+  width:100%;
+  height: 100%;
+  position: absolute;
+}
+
+.container-line-height {
+  line-height: 150%;
+}
+
+.display-row {
+  display: block;
+}
+
+.container-showcase {
+  height: 80%;
+  width: 80%;
+  position: fixed;
+  margin: auto;
+  top: 10%;
+  left: 10%;
+  scale: 1;
+  z-index: 3;
+}
+
+.container-showcase.img {
+  object-fit: contain;
+}
+
+/*child class*/
+.display-row .container {
+  margin-top: 10%;
+}
+
+/* positions */
+
+.align-left {
+  text-align: left;
+  justify-content: left;
+  align-items: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.container-align-right {
+  margin-left: auto; 
+  margin-right: 0;  
+}
+
+.container-100 {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container-10 {
+  height: 100%;
+  width: 10%;
+  overflow: hidden;
+}
+
+.divider-15 {
+  margin-top: 15%;
+}
+
+.divider-10 {
+  margin-top: 10%;
+}
+
+.divider-2 {
+  margin-top: 1.5%;
+}
+
+.divider-5 {
+  margin-top: 5%;
+}
+
+.line {
+  margin: 2% 0 2% 0;
+  height: 0.5px;
+  background-color: black;
+}
+
+.page-half{
+  position: absolute;
+  /*border:1px solid black;*/
+  width: 50%;
+  height: 100%;
+}
+
+.thumbnail-row {
+  grid-column-gap: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  overflow: hidden;
+  max-height: 30vw;
+  width: relative;
+
+}
+
+.thumbnail-row-container {
+  width: relative;
+  background-color: black;
+  overflow: hidden;
+}
+
+.footer {
+  margin-top: 10%;
+}
+
+.container-bottom {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.container-bottom-image-text {
+  height: 100%;
+  width: 95%;
+  margin: 0 2.5% 0% 2.5%;
+  z-index: 1;
+}
+
+.text-bottom-image-text {
+  width:  80%;
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  top: 95%;
+  transform: translateX(-50%);
+  transition: ease-in-out 0.4s;
+  opacity: 0%;
+}
+
+/* placing items at the  bottom */
+
+.text-bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.container-about {
+  height: 70%;
+  position:relative
+}
+
+.container-gradient {
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0%;
+  transition: ease-in-out 0.4s;
+  opacity: 0%;
+}
+
+.container-gallery {
+  /* height: 110%;
+  width:110%; */
+  transform: scale(1.2);
+  display:block;
+  margin:auto;
+  position:relative;
+  /* left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+  justify-content: center;
+}
+
+.gallery-row {
+  background-color: black;
+  overflow: hidden;
+  height:100%;
+  width: 100%
+}
+
+
+.back-button {
+  width: 100%;
+  overflow: hidden;
+  background: black;
+  border: 1px solid black;
+  color: white;
+  padding: 1.5px 15px;
+  border-radius: 0px;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  transition: all 0.5s ease-in-out 0s;
+  cursor: pointer;
+}
+
+.back-button-cover {
+  position:relative;
+  bottom: +53px;
+  left: +51px;
+  width: 100%;
+  overflow: hidden;
+  background: white;
+  border: 2px solid white;
+  color: white;
+  padding: 1.5px 15px;
+  border-radius: 0px;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  transition: all 0.5s ease-in-out 0s;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* .back-button:hover {
+  border-radius: 30px;
+  transition: ease-in-out 0.3s;
+  background: white;
+  color:black;
+  cursor: pointer;
+} */
+
+
+
+
+/* .images {
+  height: 100%;
+  width: 100%;
+} */
+
+
+/* Any img element that is inside an image class*/
+/* .images img.opacity-toggle {
+  opacity: 40%;
+  transform: scale(0.97);
+} */
+
+/* Any text-bottom-image-text that is inside an images div
+.images #white.opacity-toggle {
+  opacity: 40%;
+  transform: scale(0.97);
+} */
+
+
+.withHover:hover img{
+  opacity: 20%;
+  transform: scale(0.97);
+}
+
+
+.withHover:hover .container-gradient{
+  bottom: 0%;
+  opacity: 100%;
+}
+
+.withHover:hover .text-bottom-image-text{
+  width:  80%;
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translateX(-50%);
+  transition: ease-in-out 0.4s;
+  opacity: 100%;
+}
+/* animations */ 
+
+
+@keyframes fadeInAnimation {
+
+  0% {
+      opacity: 0; 
+      padding: 0;
+  }
+
+  1% {
+    padding: +20% +3% +3% +3%;
+  }
+
+  100% {
+      opacity: 100%;
+      overflow-y: scroll;
+      animation-timing-function: ease-in-out;
+      margin: 0 0 0 0;
+      padding: 0;
+      height: 100%;
+  }
+}

@@ -212,6 +212,15 @@ h6 {
   justify-items: right;
 }
 
+.container-nav-project {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5%;
+  /*aligned my items to the right!*/
+  justify-items: right;
+}
+
+
 .container-left-text { 
   width: 40%;
   text-align: left;
@@ -846,5 +855,10 @@ html, body {
 
 img {
   object-fit: contain;
+}
+
+.container-nav-project {
+  margin-top: 5vh;
+  text-align: left;
 }
 }

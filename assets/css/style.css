@@ -460,11 +460,15 @@ gap: 8px;
 .thumbnail-row {
   grid-column-gap: 4px;
   margin-bottom: 8px;
-  display: flex;
+  display: grid;
   overflow: hidden;
-  max-height: 30vw;
+  gap: 1%;
   width: relative;
+}
 
+.thumbnail-mini-row {
+  display: flex;
+  gap: 0.3%;
 }
 
 .thumbnail-row-container {
@@ -722,13 +726,17 @@ position: absolute;
     gap: 8px;
   }
 
+  .thumbnail-mini-row {
+    display: grid;
+  }
+
   .thumbnail-row-container {
     height: 100%;
     width: 100%;
   }
   
   #index .footer{
-    margin-top: 150.1%;
+    margin-top: 5%;
   }
 
   .footer .container-grid-template-3 {
